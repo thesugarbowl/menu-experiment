@@ -1,0 +1,28 @@
+#bannerSugarbowl {
+    width: 100%;
+}
+
+#bannerBeverages {
+    background-image: url("img/beverages.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+#bannerFood {
+    background-image: url("img/food.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+#bannerOffsales {
+    background-image: url("img/offsales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.accordion-button {
+    display:block;
+}
