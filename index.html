@@ -11,17 +11,6 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 
-    <!--JS for form validation-->
-    <!-- <script>
-      function validateForm() {
-        var x = document.forms["myForm"]["message"].value;
-        if (x == "") {
-          alert ("Please include a message.");
-          return false;
-        }
-      }
-    </script> -->
-
 </head>
 <body>
 
@@ -2035,7 +2024,7 @@
 
           <form name="myForm" action="https://getform.io/f/40140939-a62c-41a2-9f43-0d9adba40cd1" onsubmit="return validateForm()" method="POST" accept-charset="UTF-8">
             <div class="form-group mb-3">
-              <label for="sender-name" class="col-form-label">Name:</label>
+              <label for="sender-name" class="col-form-label">Your Name:</label>
               <input type="text" class="form-control" name="name">
             </div>
             <div class="form-group mb-3">
@@ -2046,11 +2035,11 @@
               <label for="message-text" class="col-form-label">Message:</label>
               <textarea type="text" class="form-control" rows="4" name="message" required></textarea>
             </div>
+            <div class="form-group mb-3 text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
           </form>
           
-        </div>
-        <div class="modal-footer justify-content-center">
-          <button type="button" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>
