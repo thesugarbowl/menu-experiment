@@ -11,6 +11,17 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 
+    <!--JS for form validation-->
+    <!-- <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["message"].value;
+        if (x == "") {
+          alert ("Please include a message.");
+          return false;
+        }
+      }
+    </script> -->
+
 </head>
 <body>
 
@@ -57,7 +68,7 @@
                   Beer/Cider
                 </button>
               </h2>
-              <div id="collapseBeerCider" class="accordion-collapse collapse" aria-labelledby="beerCider" data-bs-parent="#accordionExample">
+              <div id="collapseBeerCider" class="accordion-collapse collapse" aria-labelledby="beerCider" data-bs-parent="#accordionBeverages">
                 <div class="accordion-body">
                   
                     <table class="table table-striped" style="text-align:left;">
@@ -219,7 +230,7 @@
                   Taps/Feature Bottles
                 </button>
               </h2>
-              <div id="collapseTapsFeatureBottles" class="accordion-collapse collapse" aria-labelledby="tapsFeatureBottles" data-bs-parent="#accordionExample">
+              <div id="collapseTapsFeatureBottles" class="accordion-collapse collapse" aria-labelledby="tapsFeatureBottles" data-bs-parent="#accordionBeverages">
                 <div class="accordion-body">
                   <p><b>See our chalkboard for our rotating selection.</b></p>
                 </div>
@@ -232,7 +243,7 @@
                   Wine
                 </button>
               </h2>
-              <div id="collapseWine" class="accordion-collapse collapse" aria-labelledby="wine" data-bs-parent="#accordionExample">
+              <div id="collapseWine" class="accordion-collapse collapse" aria-labelledby="wine" data-bs-parent="#accordionBeverages">
                 <div class="accordion-body">
                   
                     <table class="table table-striped" style="text-align:left;">
@@ -826,7 +837,7 @@
                     Spirits
                   </button>
                 </h2>
-                <div id="collapseSpirits" class="accordion-collapse collapse" aria-labelledby="spirits" data-bs-parent="#accordionExample">
+                <div id="collapseSpirits" class="accordion-collapse collapse" aria-labelledby="spirits" data-bs-parent="#accordionBeverages">
                   <div class="accordion-body">
                     
                     <table class="table table-striped" style="text-align:left;">
@@ -885,7 +896,7 @@
                     Cocktails
                   </button>
                 </h2>
-                <div id="collapseCocktails" class="accordion-collapse collapse" aria-labelledby="cocktails" data-bs-parent="#accordionExample">
+                <div id="collapseCocktails" class="accordion-collapse collapse" aria-labelledby="cocktails" data-bs-parent="#accordionBeverages">
                   <div class="accordion-body">
                     
                     <table class="table table-striped" style="text-align:left;">
@@ -954,7 +965,7 @@
                     Specialty Coffees
                   </button>
                 </h2>
-                <div id="collapseSpecialtyCoffees" class="accordion-collapse collapse" aria-labelledby="specialtyCoffees" data-bs-parent="#accordionExample">
+                <div id="collapseSpecialtyCoffees" class="accordion-collapse collapse" aria-labelledby="specialtyCoffees" data-bs-parent="#accordionBeverages">
                   <div class="accordion-body">
                     
                     <table class="table table-striped" style="text-align:left;">
@@ -1001,7 +1012,7 @@
                     Coffee & Non-Alcoholic
                   </button>
                 </h2>
-                <div id="collapseCoffeeNonalcoholic" class="accordion-collapse collapse" aria-labelledby="coffeeNonalcoholic" data-bs-parent="#accordionExample">
+                <div id="collapseCoffeeNonalcoholic" class="accordion-collapse collapse" aria-labelledby="coffeeNonalcoholic" data-bs-parent="#accordionBeverages">
                   <div class="accordion-body">
                     
                     <table class="table table-striped" style="text-align:left;">
@@ -1125,8 +1136,8 @@
 
   <div class="row m-4"><a id="food"></a></div>
 
-<!-- container div -->
-</div>
+  <!-- container div -->
+  </div>
 
   <!-- jumbotron food -->
   <div class="row d-flex justify-content-center">
@@ -1149,7 +1160,7 @@
                     Breakfast (Until 3PM)
                   </button>
                 </h2>
-                <div id="collapseBreakfast" class="accordion-collapse collapse" aria-labelledby="breakfast" data-bs-parent="#accordionExample">
+                <div id="collapseBreakfast" class="accordion-collapse collapse" aria-labelledby="breakfast" data-bs-parent="#accordionFood">
                   <div class="accordion-body">
 
                     <div class="text-center mt-2 mb-2">
@@ -1399,7 +1410,7 @@
                     Lunch & Dinner (Available From 9AM)
                   </button>
                 </h2>
-                <div id="collapseLunchDinner" class="accordion-collapse collapse" aria-labelledby="lunchDinner" data-bs-parent="#accordionExample">
+                <div id="collapseLunchDinner" class="accordion-collapse collapse" aria-labelledby="lunchDinner" data-bs-parent="#accordionFood">
                   <div class="accordion-body">
 
                     <table class="center mt-2 mb-3" style="width:80%;">
@@ -1717,7 +1728,7 @@
                       Desserts
                     </button>
                   </h2>
-                  <div id="collapseDesserts" class="accordion-collapse collapse" aria-labelledby="desserts" data-bs-parent="#accordionExample">
+                  <div id="collapseDesserts" class="accordion-collapse collapse" aria-labelledby="desserts" data-bs-parent="#accordionFood">
                     <div class="accordion-body">
 
                       <table class="center mt-2 mb-4" style="width:60%;">
@@ -1824,28 +1835,28 @@
 <!-- container div --> 
 </div>
 
-  <!-- jumbotron off-sales -->
-  <div class="row d-flex justify-content-center">
-      <div class="col-md-12">
-          <div class='jumbotron text-center' id="bannerOffsales">
-              <h1 class="display-4 p-5">OFF-SALES</h1>
-          </div>
-      </div>
-  </div>
+<!-- jumbotron off-sales -->
+<div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+        <div class='jumbotron text-center' id="bannerOffsales">
+            <h1 class="display-4 p-5">OFF-SALES</h1>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid">
 
-  <div class="row mb-5 pb-5">
+  <div class="row mb-5">
       <div class="col-md-12 text-center">
 
-        <div class="accordion" id="offsales">
+        <div class="accordion mb-5 pb-3" id="accordionOffsales">
           <div class="accordion-item">
             <h2 class="accordion-header" id="offsales">
               <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOffsales" aria-expanded="false" aria-controls="collapseOffsales">
                 Click Me!
               </button>
             </h2>
-            <div id="collapseOffsales" class="accordion-collapse collapse" aria-labelledby="headingOffsales" data-bs-parent="#accordionExample">
+            <div id="collapseOffsales" class="accordion-collapse collapse" aria-labelledby="offsales" data-bs-parent="#accordionOffsales">
               <div class="accordion-body">
                 
                 <table class="table" style="text-align:left;">
@@ -2008,16 +2019,59 @@
           </div>
         </div>
 
+  <!--error reporting-->
+  <p><b>Found an error?</b></p>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100" id="exampleModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align:left;">
+
+          <form name="myForm" action="https://getform.io/f/40140939-a62c-41a2-9f43-0d9adba40cd1" onsubmit="return validateForm()" method="POST" accept-charset="UTF-8">
+            <div class="form-group mb-3">
+              <label for="sender-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group mb-3">
+              <label for="sender-email" class="col-form-label">Your Email Address:</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea type="text" class="form-control" rows="4" name="message" required></textarea>
+            </div>
+          </form>
+          
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
       </div>
+    </div>
   </div>
 
-<!-- container div -->
+    <!--col div-->
+    </div>
+  <!--row div-->
+  </div>
+
+  <!--footer-->
+  <footer class="text-center mb-1"><small>2021 Sugarbowl</small></footer>
+
+<!--container div-->
 </div>
 
-<!-- content div -->
+<!--content div-->
 </div>
+
   <!--bootstrap bundle with popper-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+  
 </body>
 </html>
